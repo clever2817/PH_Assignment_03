@@ -26,7 +26,7 @@ else
 /** Problem -03 ( Medicine Planner ) */
 var lastDay = 11 ;
 //write your code here
-for(let i=1; i<=lastDay; i++)
+for(var i=1; i<=lastDay; i++)
 {
     if(i % 3 === 0)
     {
@@ -61,3 +61,17 @@ var student= { name: "jhankar" , roll: 1014 ,department: "cse" };
 //write your code here
 
 console.log(student.name + student.roll + "." + student.department + "@ph.ac.bd");
+
+
+/** Problem 06 :  (Current Salary )  */
+var experience = 30;
+var startingSalary = 45000;
+//write your code here
+var currentSalary = startingSalary;
+
+for(var i=1; i<=experience; i++)
+{
+    currentSalary += (currentSalary * (5/100));
+}
+
+console.log(Number(currentSalary.toFixed(2)));
