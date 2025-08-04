@@ -38,3 +38,20 @@ for(let i=1; i<=lastDay; i++)
         console.log(i + " - " + "rest");
     }
 }
+
+
+/** Problem 04 - (Delete / Store) */
+var fileName= "pdfData.jpg";
+//write your code here
+var file = fileName.split(".");
+
+if(fileName[0] === "#" || file[1] === "pdf" || file[1] === "docx")
+{
+    console.log("Store");
+}
+
+else
+{
+    console.log("Delete");
+}
+
